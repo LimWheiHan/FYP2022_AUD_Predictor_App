@@ -20,10 +20,11 @@ pyparsing
 python-dateutil
 pytz
 regex
+scikit-learn
+scipy
 setuptools
 six
-scipy
-scikit-learn
+sklearn
 tenacity
 textblob
 threadpoolctl
