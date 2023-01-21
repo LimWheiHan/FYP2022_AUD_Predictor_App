@@ -31,14 +31,14 @@ def lemmatize_text(text):
     return ' '.join([lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text) if not w in set(stopwords)])
 
 # Load ML model (chosen the logistic regression model)
-model = pickle.load(open('flaskweb/SVCmodel.pkl', 'rb')) 
+model = pickle.load(open('SVCmodel.pkl', 'rb')) 
 
 # Load TF IDF document matrix
 #tf_idf = TfidfVectorizer(ngram_range = (1,3), analyzer='word')
-tf_idf = pickle.load(open('flaskweb/TFIDF.pkl', 'rb'))
+tf_idf = pickle.load(open('TFIDF.pkl', 'rb'))
 
 # Load trained dataset feature coefficients
-feature_coef = pickle.load(open('flaskweb/SVCfeature_coefs_df.pkl','rb'))
+feature_coef = pickle.load(open('SVCfeature_coefs_df.pkl','rb'))
 
 
 # Create application
@@ -166,4 +166,4 @@ def about():
 
 if __name__ == '__main__':
 #Run the application
-    app.run(host="0.0.0.0", port=8080, debug=True)#to debug & test locally
+    app.run(host="0.0.0.0")#to debug & test locally
