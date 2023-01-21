@@ -22,6 +22,7 @@ pytz
 regex
 setuptools
 six
+sklearn
 tenacity
 textblob
 threadpoolctl
