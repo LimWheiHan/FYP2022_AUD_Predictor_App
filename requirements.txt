@@ -22,6 +22,7 @@ pytz
 regex
 setuptools
 six
+scipy
 scikit-learn
 tenacity
 textblob
