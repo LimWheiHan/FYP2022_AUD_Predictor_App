@@ -15,6 +15,7 @@ numpy
 packaging
 pandas
 Pillow
+pickleshare
 plotly
 pyparsing
 python-dateutil
