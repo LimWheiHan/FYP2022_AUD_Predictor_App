@@ -12,6 +12,7 @@ from flask import Flask, request, render_template
 from nltk.stem import WordNetLemmatizer
 from nltk import tokenize
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 
 from textblob import TextBlob
 
