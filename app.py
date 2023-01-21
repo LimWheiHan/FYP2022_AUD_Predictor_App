@@ -9,12 +9,11 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 from flask import Flask, request, render_template
 
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
 from nltk.stem import WordNetLemmatizer
 from nltk import tokenize
-import nltk
-nltk.download('stopwords')
-from nltk.corpus import stopwords
-
 
 from textblob import TextBlob
 
