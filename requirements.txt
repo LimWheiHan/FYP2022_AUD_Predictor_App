@@ -21,7 +21,7 @@ python-dateutil
 pytz
 regex
 scikit-learn
-scipy
+scipy==1.7.3
 setuptools
 six
 sklearn
