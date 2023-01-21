@@ -17,7 +17,7 @@ from nltk import tokenize
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
-
+import scipy
 
 from textblob import TextBlob
 
