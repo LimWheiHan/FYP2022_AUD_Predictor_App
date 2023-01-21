@@ -15,6 +15,10 @@ nltk.download('stopwords')
 from nltk.stem import WordNetLemmatizer
 from nltk import tokenize
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.svm import LinearSVC
+
+
 from textblob import TextBlob
 
 import json
